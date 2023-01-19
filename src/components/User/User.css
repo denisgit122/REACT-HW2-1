@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    position: relative;
+    padding: 0;
+}
+.box{
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
+    background: darkgrey;
+    border: 2px solid black;
+    padding-top: 9px;
+}
+.boxFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    width: 400px;
+
+}
