@@ -2,12 +2,13 @@
 import React, {useEffect, useState} from "react";
 
 import {User} from "../User/User";
-// import {axiosService} from "../../servicer/axiosService";
-import {userService} from "../../servicer/userService";
+import {userService} from "../../Servicer/userService";
+
 
 const Users = () => {
  const [users, setUsers] = useState([])
     useEffect(() => {
+
 
         userService.getAll()
             .then(value => value.data)
