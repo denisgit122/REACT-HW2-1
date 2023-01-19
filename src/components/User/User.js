@@ -1,6 +1,6 @@
 import  './User.css'
 
-const User = ({user}) => {
+const User = ({user,setUseDetails}) => {
     const {id, userId, title,body}=user;
 
 return (
@@ -14,7 +14,7 @@ return (
                   <p>{body}</p>
               </div>
           </div>
-      <button >learn more</button>
+      <button onClick={()=>setUseDetails(user)} className={'button'}>learn more</button>
 
   </div>
 );
